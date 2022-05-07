@@ -11,8 +11,7 @@ function cmd_check()
 {
     echo -n "$1"
 
-    b="bash -c"
-    q=`${b} "${2}"`
+    q=`bash -c "${2}"`
 
     #echo $q
 
