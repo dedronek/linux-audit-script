@@ -4,3 +4,6 @@ cd tests
 . audit_var.sh
 . audit_home.sh
 . audit_sticky_bit.sh
+. audit_aide.sh
+. audit_bootloader.sh
+. audit_ASLR.sh

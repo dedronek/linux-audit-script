@@ -7,13 +7,28 @@ NC=$'\e[0m'
 success="${GREEN}Passed${NC}"
 failure="${RED}Not passed${NC}"
 
+#consider adding function like:
+# message, query, expected result -> cmd_check_result -> true/false
+# message, query, string to find in output -> cmd_check_contains -> true/false
+
+root=1
+
+check_if_root()
+{
+  if [ "$EUID" -ne 0 ]
+    then root=0
+  fi
+}
+
+check_if_root
+
 function cmd_check()
 {
     echo -n "$1"
 
     q=`bash -c "${2}"`
 
-    #echo $q
+
 
     if [ "$3" == "output" ]; then
       if [ "$q" != "" ]; then
@@ -39,6 +54,7 @@ function cmd_check()
 }
 
 export -f cmd_check
+export -f check_if_root
 
 score=0
 failed=0

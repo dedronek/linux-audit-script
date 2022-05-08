@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="UnattendedHostPersistenceState">
+    <option name="openedFilesInfos">
+      <list>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="215" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_tmp.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="131" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/1_filesystem.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="309" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="250" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_ASLR.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="100" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_aide.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1139" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_bootloader.sh" />
+        </OpenedFileInfo>
+      </list>
+    </option>
+  </component>
+</project>
