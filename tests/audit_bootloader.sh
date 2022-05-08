@@ -1,7 +1,6 @@
 echo "Auditing bootloader..."
 
- cmd_check "bootloader password for superuser is set ... " 'grep "^set superusers" /boot/grub/grub.cfg' "output"
- cmd_check "bootloader password is encrypted ... " 'grep "^password" /boot/grub/grub.cfg' "output"
+ cmd_check "bootloader password for superuser is set ... " 'grep "^set superusers" /boot/grub/grub.cfg && grep "^password" /boot/grub/grub.cfg' "output"
 
 echo -n "bootloader config overridden by update-grub to 400 ... "
 
