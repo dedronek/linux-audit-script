@@ -7,4 +7,6 @@ cd tests
 #. audit_aide.sh
 #. audit_bootloader.sh
 #. audit_ASLR.sh
-. audit_apparmor.sh
+#. audit_apparmor.sh
+#. audit_cli_warning_banners.sh
+. audit_system_update.sh

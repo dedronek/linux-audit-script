@@ -7,28 +7,16 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="215" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_tmp.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="367" />
+          <option name="caretOffset" value="453" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="158" />
+          <option name="caretOffset" value="187" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_system_update.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="235" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/functions/1_filesystem.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_ASLR.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="86" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_bootloader.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="548" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_apparmor.sh" />
         </OpenedFileInfo>
       </list>
     </option>

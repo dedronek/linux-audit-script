@@ -12,7 +12,9 @@ echo -n "bootloader config overridden by update-grub to 400 ... "
     q2=`bash -c "${bootloader_permission}"`
 
     correct_permission_update_grub='400'
-    correct_permission_grub='0400'
+    correct_permission_grub='Access: (0400'
+    correct_guid="Gid: (    0/    root)"
+    correct_uid="Uid: (    0/    root)"
 
       if [[ "$q1" == *"$correct_permission_update_grub"* ]]; then
         echo $success
@@ -22,9 +24,9 @@ echo -n "bootloader config overridden by update-grub to 400 ... "
         failed=$( expr $failed + 1 )
       fi
 
-echo -n "bootloader config permission is 400 ... "
+echo -n "bootloader config permission are correct ... "
 
-      if [[ "$q2" == *"$correct_permission_grub"* ]]; then
+      if [[ "$q2" == *"$correct_permission_grub"* ]] && [[ "$q2" == *"$correct_guid"* ]] && [[ "$q2" == *"$correct_uid"* ]] ; then
         echo $success
         score=$( expr $score + 1 )
       else
