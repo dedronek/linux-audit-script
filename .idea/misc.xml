@@ -7,16 +7,20 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="453" />
+          <option name="caretOffset" value="1039" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="187" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_system_update.sh" />
+          <option name="caretOffset" value="212" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/1_filesystem.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="235" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/1_filesystem.sh" />
+          <option name="caretOffset" value="23" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/2_services.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="144" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_nis.sh" />
         </OpenedFileInfo>
       </list>
     </option>
