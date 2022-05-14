@@ -63,7 +63,8 @@ DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 #. "$DIR/functions/1_filesystem.sh"
 #. "$DIR/functions/2_services.sh"
-. "$DIR/functions/3_network.sh"
+#. "$DIR/functions/3_network.sh"
+. "$DIR/functions/4_logging.sh"
 
 echo -n "Total passed: "
 echo $score

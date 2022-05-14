@@ -1,7 +1,7 @@
-echo "Auditing network packages..."
-
 #ROOT NEEDED
 if [ $root -eq 1 ]; then
+
+echo "Auditing network packages..."
 
 q1=`sysctl net.ipv4.conf.default.accept_source_route | grep -E '0'`
 q2=`sysctl net.ipv4.conf.all.accept_source_route | grep -E '0'`

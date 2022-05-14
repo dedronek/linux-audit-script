@@ -10,7 +10,6 @@ echo -n "NIS server and client not installed ... "
       else
         echo $failure
         failed=$( expr $failed + 1 )
-        return 0
       fi
 
 echo -n "rsh client not installed ... "
@@ -23,7 +22,6 @@ echo -n "rsh client not installed ... "
       else
         echo $failure
         failed=$( expr $failed + 1 )
-        return 0
       fi
 
 echo -n "talk client not installed ... "
@@ -36,7 +34,6 @@ echo -n "talk client not installed ... "
       else
         echo $failure
         failed=$( expr $failed + 1 )
-        return 0
       fi
 
 echo -n "telnet client not installed ... "
@@ -49,5 +46,4 @@ echo -n "telnet client not installed ... "
       else
         echo $failure
         failed=$( expr $failed + 1 )
-        return 0
       fi

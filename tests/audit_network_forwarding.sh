@@ -1,7 +1,7 @@
-echo "Auditing network forwarding..."
-
 #ROOT NEEDED
 if [ $root -eq 1 ]; then
+
+echo "Auditing network forwarding..."
 
 q1=`sysctl net.ipv4.conf.all.send_redirects | grep -E '0'`
 q2=`sysctl net.ipv4.conf.default.send_redirects | grep -E '0'`
