@@ -1,4 +1,4 @@
-echo "Auditing NIS services..."
+echo "Auditing unsafe services..."
 
 echo -n "NIS server and client not installed ... "
 
