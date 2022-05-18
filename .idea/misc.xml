@@ -31,7 +31,11 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/functions/5_access_authentication_authorization.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
+          <option name="caretOffset" value="1177" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="2000" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_ssh.sh" />
         </OpenedFileInfo>
       </list>
