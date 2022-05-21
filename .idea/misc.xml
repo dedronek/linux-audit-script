@@ -27,16 +27,20 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_journald.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="27" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/5_access_authentication_authorization.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="1177" />
+          <option name="caretOffset" value="1040" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="2000" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_ssh.sh" />
+          <option name="caretOffset" value="1346" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_pam.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="4161" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_user_acc_and_env.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="60" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/5_access_authentication_authorization.sh" />
         </OpenedFileInfo>
       </list>
     </option>
