@@ -15,16 +15,32 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_cron.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="179" />
+          <option name="caretOffset" value="177" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/functions/1_filesystem.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1041" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
+          <option name="caretOffset" value="603" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_cli_warning_banners.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="729" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_cli_warning_banners.sh" />
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/3_network.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="553" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_network_forwarding.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_network_packages.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_firewall.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1751" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
         </OpenedFileInfo>
       </list>
     </option>
