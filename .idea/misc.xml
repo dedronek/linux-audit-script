@@ -23,6 +23,10 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_cli_warning_banners.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
+          <option name="caretOffset" value="3382" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
           <option name="caretOffset" value="0" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/functions/3_network.sh" />
         </OpenedFileInfo>
@@ -39,8 +43,8 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_firewall.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1751" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitignore" />
         </OpenedFileInfo>
       </list>
     </option>
