@@ -61,11 +61,12 @@ failed=0
 
 DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
-#. "$DIR/functions/1_filesystem.sh"
-#. "$DIR/functions/2_services.sh"
-#. "$DIR/functions/3_network.sh"
-#. "$DIR/functions/4_logging.sh"
+. "$DIR/functions/1_filesystem.sh"
+. "$DIR/functions/2_services.sh"
+. "$DIR/functions/3_network.sh"
+. "$DIR/functions/4_logging.sh"
 . "$DIR/functions/5_access_authentication_authorization.sh"
+. "$DIR/functions/6_system_maintenance.sh"
 
 echo -n "Total passed: "
 echo $score

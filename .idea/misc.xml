@@ -7,40 +7,40 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="106" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_firewall.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_dev_shm.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_cli_warning_banners.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="571" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_bootloader.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="976" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_journald.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="1040" />
+          <option name="caretOffset" value="1117" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1346" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_pam.sh" />
+          <option name="caretOffset" value="881" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_ssh.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="4161" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_user_acc_and_env.sh" />
+          <option name="caretOffset" value="7952" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_users_and_groups_settings.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="60" />
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/1_filesystem.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/2_services.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/4_logging.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/3_network.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/functions/5_access_authentication_authorization.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="9" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/6_system_maintenance.sh" />
         </OpenedFileInfo>
       </list>
     </option>
