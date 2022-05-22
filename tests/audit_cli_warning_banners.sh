@@ -6,9 +6,10 @@ cmd_check "remote login warning banner configured properly ... " 'grep -E -i "(\
 
 echo -n "correct permissions for file /etc/motd ... "
 
-    q=`bash -c "stat -L /etc/motd"`
+    q1=`bash -c "stat -L /etc/motd 2>&1 | grep -o root | wc -l"`
+    q2=`bash -c "stat -L /etc/motd 2>&1 | grep -oP '\(\K[^\)]+' | head -1 | grep -E 0644"`
 
-    if [[ "$q" == *"Access: (0644/-rw-r--r--)"* ]]  && [[ "$q" == *"Uid: (    0/    root)"* ]] && [[ "$q" == *"Gid: (    0/    root)"* ]] ; then
+    if [[ "$q1" == "2" ]]  && [[ "$q2" != "" ]] || [[ ! -f "/etc/motd" ]] && [[ ! -d "/etc/motd" ]]; then
       echo $success
       score=$( expr $score + 1 )
     else
@@ -18,9 +19,11 @@ echo -n "correct permissions for file /etc/motd ... "
 
 echo -n "correct permissions for file /etc/issue ... "
 
-    q=`bash -c "stat -L /etc/issue"`
+    q1=`bash -c "stat -L /etc/issue 2>&1 | grep -o root | wc -l"`
+    q2=`bash -c "stat -L /etc/issue 2>&1 | grep -oP '\(\K[^\)]+' | head -1 | grep -E 0644"`
 
-    if [[ "$q" == *"Access: (0644/-rw-r--r--)"* ]]  && [[ "$q" == *"Uid: (    0/    root)"* ]] && [[ "$q" == *"Gid: (    0/    root)"* ]] ; then
+
+    if [[ "$q1" == "2" ]]  && [[ "$q2" != "" ]]; then
       echo $success
       score=$( expr $score + 1 )
     else
@@ -30,9 +33,11 @@ echo -n "correct permissions for file /etc/issue ... "
 
 echo -n "correct permissions for file /etc/issue.net ... "
 
-    q=`bash -c "stat -L /etc/issue.net"`
+    q1=`bash -c "stat -L /etc/issue.net 2>&1 | grep -o root | wc -l"`
+    q2=`bash -c "stat -L /etc/issue.net 2>&1 | grep -oP '\(\K[^\)]+' | head -1 | grep -E 0644"`
 
-    if [[ "$q" == *"Access: (0644/-rw-r--r--)"* ]]  && [[ "$q" == *"Uid: (    0/    root)"* ]] && [[ "$q" == *"Gid: (    0/    root)"* ]] ; then
+
+    if [[ "$q1" == "2" ]]  && [[ "$q2" != "" ]]; then
       echo $success
       score=$( expr $score + 1 )
     else

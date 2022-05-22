@@ -2,21 +2,12 @@ echo "Auditing bootloader..."
 
  cmd_check "bootloader password for superuser is set ... " 'grep "^set superusers" /boot/grub/grub.cfg && grep "^password" /boot/grub/grub.cfg' "output"
 
-echo -n "bootloader config overridden by update-grub to 400 ... "
+echo -n "bootloader config permission are correct ... "
 
-    permission_by_update_grub='grep -E '\''^\s*chmod\s+[0-7][0-7][0-7]\s+\$\{grub_cfg\}\.new'\'' -A 1 -B1 /usr/sbin/grub-mkconfig'
-    bootloader_permission="stat /boot/grub/grub.cfg"
+      q1=`stat /boot/grub/grub.cfg 2>&1 | grep -o root | wc -l`
+      q2=`stat /boot/grub/grub.cfg 2>&1 | grep -oP '\(\K[^\)]+' | head -1 | grep -E 0[0-4]00`
 
-    q1=`bash -c "${permission_by_update_grub}"`
-
-    q2=`bash -c "${bootloader_permission}"`
-
-    correct_permission_update_grub='400'
-    correct_permission_grub='Access: (0400'
-    correct_guid="Gid: (    0/    root)"
-    correct_uid="Uid: (    0/    root)"
-
-      if [[ "$q1" == *"$correct_permission_update_grub"* ]]; then
+      if [[ "$q1" == "2" ]] && [[ "$q2" != "" ]]; then
         echo $success
         score=$( expr $score + 1 )
       else
@@ -24,9 +15,15 @@ echo -n "bootloader config overridden by update-grub to 400 ... "
         failed=$( expr $failed + 1 )
       fi
 
-echo -n "bootloader config permission are correct ... "
 
-      if [[ "$q2" == *"$correct_permission_grub"* ]] && [[ "$q2" == *"$correct_guid"* ]] && [[ "$q2" == *"$correct_uid"* ]] ; then
+
+echo -n "bootloader config overridden by update-grub to 400 ... "
+
+    permission_by_update_grub='grep -E '\''^\s*chmod\s+[0-7][0-7][0-7]\s+\$\{grub_cfg\}\.new'\'' -A 1 -B1 /usr/sbin/grub-mkconfig'
+
+    q1=`bash -c "${permission_by_update_grub}"`
+
+      if [[ "$q1" == *"400"* ]]; then
         echo $success
         score=$( expr $score + 1 )
       else
