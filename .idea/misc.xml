@@ -7,10 +7,6 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="9" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/1_filesystem.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
           <option name="caretOffset" value="97" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/functions/5_access_authentication_authorization.sh" />
         </OpenedFileInfo>
@@ -43,7 +39,11 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_sudo.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1731" />
+          <option name="caretOffset" value="438" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_users_and_groups_settings.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="382" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
         </OpenedFileInfo>
       </list>

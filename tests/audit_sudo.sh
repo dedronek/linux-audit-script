@@ -15,6 +15,6 @@ echo -n "sudo is installed  ... "
 
 #ROOT NEEDED
 if [ $root -eq 1 ]; then
-cmd_check "sudo commands use pty ... " 'grep -Ei '\''^\s*Defaults\s+([^#]+,\s*)?use_pty(,\s+\S+\s*)*(\s+#.*)?$'\'' /etc/sudoers /etc/sudoers.d/*' "output"
-cmd_check "logging for sudo is configured ... " 'grep -Ei '\''^\s*Defaults\s+logfile=\S+'\'' /etc/sudoers /etc/sudoers.d/*' "output"
+cmd_check "sudo commands use pty ... " 'grep -Ei '\''^\s*Defaults\s+([^#]+,\s*)?use_pty(,\s+\S+\s*)*(\s+#.*)?$'\'' /etc/sudoers /etc/sudoers.d/* 2>&1' "output"
+cmd_check "logging for sudo is configured ... " 'grep -Ei '\''^\s*Defaults\s+logfile=\S+'\'' /etc/sudoers /etc/sudoers.d/* 2>&1' "output"
 fi

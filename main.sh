@@ -63,7 +63,7 @@ function cmd_check()
 }
 
 export -f cmd_check
-export -f check_if_root
+export -f check_if_root_and_sudo
 
 score=0
 failed=0

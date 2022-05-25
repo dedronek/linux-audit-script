@@ -14,7 +14,7 @@ echo -n "rsyslog is installed ... "
 
 echo -n "rsyslog service is enabled ... "
 
-    q2=`bash -c "systemctl is-enabled rsyslog"`
+    q2=`bash -c "systemctl is-enabled rsyslog 2>&1"`
 
       if [[ "$q2" == "enabled" ]]; then
         echo $success

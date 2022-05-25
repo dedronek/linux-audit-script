@@ -2,8 +2,8 @@ echo "Auditing cron..."
 
 echo -n "cron is installed and running ... "
 
-    q1=`systemctl is-enabled cron`
-    q2=`systemctl status cron | grep -o 'active (running) '`
+    q1=`bash -c "systemctl is-enabled cron 2>&1"`
+    q2=`systemctl status cron 2>&1 | grep -o 'active (running) '`
 
       if [ "$q1" == "enabled" ] && [ "$q2" != "" ]; then
         echo $success
