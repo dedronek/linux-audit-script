@@ -2,7 +2,7 @@ echo "Auditing sudo..."
 
 echo -n "sudo is installed  ... "
 
-    q1=`dpkg -s sudo | grep -o "install ok"`
+    q1=`dpkg -s sudo 2>&1 | grep -o "install ok"`
     q2=`dpkg -s sudo-ldap 2>&1 | grep -o "install ok" `
 
       if [ "$q1" == "install ok" ] || [ "$q2" == "install ok" ]; then

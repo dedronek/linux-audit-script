@@ -7,10 +7,6 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1731" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
           <option name="caretOffset" value="9" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/functions/1_filesystem.sh" />
         </OpenedFileInfo>
@@ -31,8 +27,24 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/.gitignore" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
+          <option name="caretOffset" value="66" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_apparmor.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/functions/3_network.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="142" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_network_packages.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="60" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_sudo.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1731" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
         </OpenedFileInfo>
       </list>
     </option>

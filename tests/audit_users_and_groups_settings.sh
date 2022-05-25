@@ -11,7 +11,7 @@ if [[ $root -eq 1 ]]; then
 echo -n "all groups from /etc/passwd exist in /etc/group ... "
 
 
-q1=`for i in $(cut -s -d: -f4 /etc/passwd | sort -u ); do grep -q -P "^.*?:[^:]*:$i:" /etc/group
+q1=`for i in $(cut -s -d: -f4 /etc/passwd | sort -u ); do grep -q -P "^.*?:[^:]*:$i:" /etc/group 2>&1
   if [ $? -ne 0 ]; then
     echo "false"
   fi
@@ -46,7 +46,7 @@ q1=`awk -F: '($1!~/(halt|sync|shutdown|nfsnobody)/ && $7!~/^(\/usr)?\/sbin\/nolo
 echo -n "users own their home directories ... "
 
 
-  q1=`grep -E -v '^(halt|sync|shutdown)' /etc/passwd | awk -F: '($7 != "'"$(which nologin)"'" && $7 != "/bin/false") { print $1 " " $6 }' | while read -r user dir
+  q1=`grep -E -v '^(halt|sync|shutdown)' /etc/passwd 2>&1 | awk -F: '($7 != "'"$(which nologin)"'" && $7 != "/bin/false") { print $1 " " $6 }' | while read -r user dir
   do
     if [ ! -d "$dir" ]; then
       echo "false"
@@ -121,7 +121,7 @@ q1=`awk -F: '($1!~/(halt|sync|shutdown)/ && $7!~/^(\/usr)?\/sbin\/nologin(\/)?$/
     if [ -d "$dir" ]; then
       file="$dir/.netrc"
       if [ ! -h "$file" ] && [ -f "$file" ]; then
-        if stat -L -c "%A" "$file" | cut -c4-10 | grep -Eq '[^-]+'; then
+        if stat -L -c "%A" "$file" | cut -c4-10 | grep -Eq '[^-]+' 2>&1; then
           echo "FAILED"
         else
           echo "WARNING"
@@ -191,7 +191,7 @@ echo -n "root has UID 0 ... "
       fi
 
 #ROOT NEEDED
-if [[ $root -eq 1 ]]; then
+if [[ $root -eq 1 && $is_sudo -eq 1 ]]; then
 
   echo -n "root PATH integrity ... "
 

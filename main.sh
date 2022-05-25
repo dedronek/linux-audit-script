@@ -13,14 +13,23 @@ failure="${RED}Not passed${NC}"
 
 root=1
 
-check_if_root()
+check_if_root_and_sudo()
 {
   if [ "$EUID" -ne 0 ]
     then root=0
   fi
+
+  q1=`dpkg -s sudo 2>&1 | grep -o "install ok"`
+  q2=`dpkg -s sudo-ldap 2>&1 | grep -o "install ok" `
+
+  if [ "$q1" == "install ok" ] || [ "$q2" == "install ok" ]; then
+    is_sudo=1
+  else
+    is_sudo=0
+  fi
 }
 
-check_if_root
+check_if_root_and_sudo
 
 function cmd_check()
 {

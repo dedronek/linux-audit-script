@@ -2,7 +2,7 @@ echo "Auditing AppArmor..."
 
 echo -n "AppArmor is installed ... "
 
-    q1=`dpkg -s apparmor | grep -E '(Status:|not installed)'`
+    q1=`dpkg -s apparmor 2>&1 | grep -E '(Status:|not installed)'`
 
       if [ "$q1" == "Status: install ok installed" ]; then
         echo $success

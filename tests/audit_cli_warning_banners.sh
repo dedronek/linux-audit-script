@@ -1,8 +1,8 @@
 echo "Auditing CLI warning banners..."
 
-cmd_check "message of the day banner configured properly ... " 'grep -Eis "(\\\v|\\\r|\\\m|\\\s|$(grep '\''^ID='\'' /etc/os-release | cut -d= -f2 | sed -e '\''s/"//g'\''))" /etc/motd'
-cmd_check "local login warning banner configured properly ... " 'grep -E -i "(\\\v|\\\r|\\\m|\\\s|$(grep '\''^ID='\'' /etc/os-release | cut -d= -f2 | sed -e '\''s/"//g'\''))" /etc/issue'
-cmd_check "remote login warning banner configured properly ... " 'grep -E -i "(\\\v|\\\r|\\\m|\\\s|$(grep '\''^ID='\'' /etc/os-release | cut -d= -f2 | sed -e '\''s/"//g'\''))" /etc/issue.net'
+cmd_check "message of the day banner configured properly ... " 'grep -Eis "(\\\v|\\\r|\\\m|\\\s|$(grep '\''^ID='\'' /etc/os-release | cut -d= -f2 | sed -e '\''s/"//g'\''))" /etc/motd 2>&1'
+cmd_check "local login warning banner configured properly ... " 'grep -E -i "(\\\v|\\\r|\\\m|\\\s|$(grep '\''^ID='\'' /etc/os-release | cut -d= -f2 | sed -e '\''s/"//g'\''))" /etc/issue 2>&1'
+cmd_check "remote login warning banner configured properly ... " 'grep -E -i "(\\\v|\\\r|\\\m|\\\s|$(grep '\''^ID='\'' /etc/os-release | cut -d= -f2 | sed -e '\''s/"//g'\''))" /etc/issue.net 2>&1'
 
 echo -n "correct permissions for file /etc/motd ... "
 
