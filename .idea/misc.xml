@@ -7,20 +7,16 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
+          <option name="caretOffset" value="1567" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
           <option name="caretOffset" value="97" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/functions/5_access_authentication_authorization.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
           <option name="caretOffset" value="358" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_pam.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="8716" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_ssh.sh" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="370" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitignore" />
         </OpenedFileInfo>
         <OpenedFileInfo>
           <option name="caretOffset" value="66" />
@@ -43,8 +39,12 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_users_and_groups_settings.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="382" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/main.sh" />
+          <option name="caretOffset" value="2577" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_user_acc_and_env.sh" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="3454" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/tests/audit_ssh.sh" />
         </OpenedFileInfo>
       </list>
     </option>

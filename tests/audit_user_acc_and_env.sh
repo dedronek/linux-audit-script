@@ -38,8 +38,8 @@ echo -n "password expiration warning set on 7 days or more ... "
 
 echo -n "inactivate users lock set for 30 days or less ... "
 
-    q1=`useradd -D | grep INACTIVE | grep -oP -- '-\d+' 2>&1`
-    q2=`useradd -D | grep INACTIVE | grep -Eo '[0-9]{1,6}' 2>&1`
+    q1=`useradd -D 2>&1 | grep INACTIVE | grep -oP -- '-\d+'`
+    q2=`useradd -D 2>&1 | grep INACTIVE | grep -Eo '[0-9]{1,6}'`
 
     if [[ "$q1" != "-1" && "$q2" -le 30 ]]; then
         echo $success
