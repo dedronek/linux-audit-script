@@ -49,7 +49,7 @@ echo -n "correct permissions for public host key files ... "
 
 q=`which sshd`
 
-if [[ "$q" == ""]]; then
+if [[ "$q" == "" ]]; then
   is_sshd=0
 else
   is_sshd=1
