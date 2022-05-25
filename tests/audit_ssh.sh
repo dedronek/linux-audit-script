@@ -57,7 +57,7 @@ fi
 
 
 #ROOT NEEDED
-if [[ "$root" -eq 1 ]]; then
+if [[ "$root" -eq 1 && "$is_sshd" -eq 1]]; then
   cmd_check "SSH access is limited ... " 'sshd -T -C user=root -C host="$(hostname)" -C addr="$(grep $(hostname) /etc/hosts 2>&1 | awk '\''{print $1}'\'')" | grep -Ei '\''^\s*(allow|deny)(users|groups)\s+\S+'\''' "output"
   cmd_check "SSH usage is logging ... " 'grep -is '\''loglevel'\'' /etc/ssh/sshd_config /etc/ssh/sshd_config.d/*.conf 2>&1 | grep -Evi '\''(VERBOSE|INFO)'\'''
 
