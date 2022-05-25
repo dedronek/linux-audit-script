@@ -66,42 +66,42 @@ DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
 
-. "$DIR/functions/1_filesystem.sh"
-score_filesystem=$score
-failed_filesystem=$failed
-total_filesystem=$( expr $score_filesystem + $failed_filesystem )
-total_score=$( expr $total_score + $score )
-total_failed=$( expr $total_failed + $failed )
-score=0
-failed=0
+#. "$DIR/functions/1_filesystem.sh"
+#score_filesystem=$score
+#failed_filesystem=$failed
+#total_filesystem=$( expr $score_filesystem + $failed_filesystem )
+#total_score=$( expr $total_score + $score )
+#total_failed=$( expr $total_failed + $failed )
+#score=0
+#failed=0
 
-. "$DIR/functions/2_services.sh"
-score_services=$score
-failed_services=$failed
-total_services=$( expr $score_services + $failed_services )
-total_score=$( expr $total_score + $score )
-total_failed=$( expr $total_failed + $failed )
-score=0
-failed=0
-
-. "$DIR/functions/3_network.sh"
-score_network=$score
-failed_network=$failed
-total_network=$( expr $score_network + $failed_network )
-total_score=$( expr $total_score + $score )
-total_failed=$( expr $total_failed + $failed )
-score=0
-failed=0
-
-. "$DIR/functions/4_logging.sh"
-score_logging=$score
-failed_logging=$failed
-total_logging=$( expr $score_logging + $failed_logging )
-total_score=$( expr $total_score + $score )
-total_failed=$( expr $total_failed + $failed )
-score=0
-failed=0
-
+#. "$DIR/functions/2_services.sh"
+#score_services=$score
+#failed_services=$failed
+#total_services=$( expr $score_services + $failed_services )
+#total_score=$( expr $total_score + $score )
+#total_failed=$( expr $total_failed + $failed )
+#score=0
+#failed=0
+#
+#. "$DIR/functions/3_network.sh"
+#score_network=$score
+#failed_network=$failed
+#total_network=$( expr $score_network + $failed_network )
+#total_score=$( expr $total_score + $score )
+#total_failed=$( expr $total_failed + $failed )
+#score=0
+#failed=0
+#
+#. "$DIR/functions/4_logging.sh"
+#score_logging=$score
+#failed_logging=$failed
+#total_logging=$( expr $score_logging + $failed_logging )
+#total_score=$( expr $total_score + $score )
+#total_failed=$( expr $total_failed + $failed )
+#score=0
+#failed=0
+#
 . "$DIR/functions/5_access_authentication_authorization.sh"
 score_access=$score
 failed_access=$failed
@@ -110,15 +110,15 @@ total_score=$( expr $total_score + $score )
 total_failed=$( expr $total_failed + $failed )
 score=0
 failed=0
-
-. "$DIR/functions/6_system_maintenance.sh"
-score_system=$score
-failed_system=$failed
-total_system=$( expr $score_system + $failed_system )
-total_score=$( expr $total_score + $score )
-total_failed=$( expr $total_failed + $failed )
-score=0
-failed=0
+#
+#. "$DIR/functions/6_system_maintenance.sh"
+#score_system=$score
+#failed_system=$failed
+#total_system=$( expr $score_system + $failed_system )
+#total_score=$( expr $total_score + $score )
+#total_failed=$( expr $total_failed + $failed )
+#score=0
+#failed=0
 
 echo "========================="
 echo -e " \tRESULTS"

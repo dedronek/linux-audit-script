@@ -8,7 +8,7 @@ echo -n "AppArmor is installed ... "
         echo $success
         score=$( expr $score + 1 )
 
-        cmd_check "AppArmor is enabled in bootloader configuration ... " 'grep "^\s*linux" /boot/grub/grub.cfg | grep -v "apparmor=1" && grep "^\s*linux" /boot/grub/grub.cfg | grep -v "security=apparmor"'
+        cmd_check "AppArmor is enabled in bootloader configuration ... " 'grep "^\s*linux" /boot/grub/grub.cfg 2>&1 | grep -v "apparmor=1" && grep "^\s*linux" /boot/grub/grub.cfg | grep -v "security=apparmor"'
 
         #ROOT NEEDED
         if [ $root -eq 1 ]; then

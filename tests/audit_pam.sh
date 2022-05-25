@@ -2,9 +2,9 @@ echo "Auditing PAM..."
 
 echo -n "password length >=14, password complexity (minclass = 4) ... "
 
-    q1=`grep '^\s*minlen\s*' /etc/security/pwquality.conf | grep -Eo '[0-9]{1,4}'`
-    q2=`bash -c "grep '^\s*minclass\s*' /etc/security/pwquality.conf"`
-    q3=`grep -E '^\s*[duol]credit\s*' /etc/security/pwquality.conf | grep -o "\-1" | wc -l`
+    q1=`grep '^\s*minlen\s*' /etc/security/pwquality.conf 2>&1 | grep -Eo '[0-9]{1,4}'`
+    q2=`bash -c "grep '^\s*minclass\s*' /etc/security/pwquality.conf 2>&1"`
+    q3=`grep -E '^\s*[duol]credit\s*' /etc/security/pwquality.conf 2>&1 | grep -o "\-1" | wc -l`
 
     if [[ $q1 -ge 14 ]] && [[ $q2 -ge 4  ]] || [[ "$q3" == "4" ]]; then
         echo $success

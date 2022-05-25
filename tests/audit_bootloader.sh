@@ -1,6 +1,6 @@
 echo "Auditing bootloader..."
 
- cmd_check "bootloader password for superuser is set ... " 'grep "^set superusers" /boot/grub/grub.cfg && grep "^password" /boot/grub/grub.cfg' "output"
+ cmd_check "bootloader password for superuser is set ... " 'grep "^set superusers" /boot/grub/grub.cfg 2>&1 && grep "^password" /boot/grub/grub.cfg 2>&1' "output"
 
 echo -n "bootloader config permission are correct ... "
 
@@ -19,7 +19,7 @@ echo -n "bootloader config permission are correct ... "
 
 echo -n "bootloader config overridden by update-grub to 400 ... "
 
-    permission_by_update_grub='grep -E '\''^\s*chmod\s+[0-7][0-7][0-7]\s+\$\{grub_cfg\}\.new'\'' -A 1 -B1 /usr/sbin/grub-mkconfig'
+    permission_by_update_grub='grep -E '\''^\s*chmod\s+[0-7][0-7][0-7]\s+\$\{grub_cfg\}\.new'\'' -A 1 -B1 /usr/sxbin/grub-mkconfig 2>&1'
 
     q1=`bash -c "${permission_by_update_grub}"`
 
