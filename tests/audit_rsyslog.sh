@@ -16,7 +16,7 @@ echo -n "rsyslog is installed ... "
         failed=$( expr $failed + 1 )
       fi
 
-if [[ "$is_rsyslog" == 1 ]]
+if [[ "$is_rsyslog" == 1 ]]; then
 
 echo -n "rsyslog service is enabled ... "
 
