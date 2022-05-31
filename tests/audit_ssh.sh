@@ -47,7 +47,7 @@ echo -n "correct permissions for public host key files ... "
         failed=$( expr $failed + 1 )
       fi
 
-q=`which sshd`
+q=`type -p sshd`
 
 if [[ "$q" == "" ]]; then
   is_sshd=0

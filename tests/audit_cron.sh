@@ -2,16 +2,21 @@ echo "Auditing cron..."
 
 echo -n "cron is installed and running ... "
 
+    is_cron=""
     q1=`bash -c "systemctl is-enabled cron 2>&1"`
     q2=`systemctl status cron 2>&1 | grep -o 'active (running) '`
 
       if [ "$q1" == "enabled" ] && [ "$q2" != "" ]; then
         echo $success
+        is_cron=1
         score=$( expr $score + 1 )
       else
         echo $failure
+        is_cron=0
         failed=$( expr $failed + 1 )
       fi
+
+if [[ "$is_cron" == "1" ]]; then
 
 echo -n "correct permissions for /etc/crontab ... "
 
@@ -104,6 +109,9 @@ echo -n "cron only for authorized users ... "
         echo $failure
         failed=$( expr $failed + 1 )
       fi
+
+fi
+
 
 echo -n "at only for authorized users ... "
 
