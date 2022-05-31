@@ -75,6 +75,12 @@ DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
 
+echo -n "sudo: "
+echo $is_sudo
+
+echo -n "root: "
+echo $root
+
 . "$DIR/functions/1_filesystem.sh"
 score_filesystem=$score
 failed_filesystem=$failed
